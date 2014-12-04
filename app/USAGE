@@ -1,0 +1,9 @@
+Description:
+    Generators for AngularJS components
+
+Available Generators:
+    yo bagle-component:route [name]
+    yo bagle-component:directive [name]
+    yo bagle-component:service [name]
+    yo bagle-component:factory [name]
+    yo bagle-component:filter [name]
