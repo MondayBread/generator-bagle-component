@@ -1,7 +1,13 @@
-'use strict';
+(function() {
 
-angular.module('<%= scriptAppName %>')
-  .factory('<%= cameledName %>', function () {
+  'use strict';
+
+  angular
+    .module('<%= scriptAppName %>')
+    .factory('<%= cameledName %>', <%= cameledName %>);
+
+  /* @ngInject */
+  function <%= cameledName %>() {
     // Service logic
     // ...
 
@@ -13,4 +19,6 @@ angular.module('<%= scriptAppName %>')
         return meaningOfLife;
       }
     };
-  });
+  }
+    
+})();

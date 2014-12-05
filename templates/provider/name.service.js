@@ -1,7 +1,13 @@
-'use strict';
+(function() {
 
-angular.module('<%= scriptAppName %>')
-  .provider('<%= cameledName %>', function () {
+  'use strict';
+
+  angular
+    .module('<%= scriptAppName %>')
+    .provider('<%= cameledName %>', <%= cameledName %>);
+
+  /* @ngInject */
+  function <%= cameledName %>() {
 
     // Private variables
     var salutation = 'Hello';
@@ -22,4 +28,6 @@ angular.module('<%= scriptAppName %>')
     this.$get = function () {
       return new Greeter();
     };
-  });
+  }
+
+})();  
